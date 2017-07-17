@@ -22,3 +22,4 @@ config/initializers/secret_token.rb
 
 .env
 .rvmrc
+.DS_Store
