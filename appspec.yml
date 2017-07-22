@@ -7,3 +7,6 @@ hooks:
   AfterInstall:
     - location: deployscripts/afterinstall.sh
       runas: root
+  ApplicationStart:
+    - location: deployscripts/applicationstart.sh
+      runas: root
