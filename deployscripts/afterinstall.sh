@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PRODUCTION_DIR=/srv/app
+readonly PRODUCTION_DIR=/srv/app
 
 env > /tmp/home
 
