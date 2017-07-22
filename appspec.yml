@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-  - destination: /srv/app
+    destination: /srv/app
 hooks:
   AfterInstall:
     - location: deployscripts/afterinstall.sh
