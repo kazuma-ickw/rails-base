@@ -2,7 +2,7 @@
 
 PRODUCTION_DIR=/srv/app
 
-echo $HOME > /tmp/home
+env > /tmp/home
 
 cd ${PRODUCTION_DIR}
 /usr/local/rbenv/shims/bundle install
