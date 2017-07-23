@@ -7,5 +7,5 @@ if [ -n "$UNICORN_MASTER_ID" ]; then
   kill -9 $UNICORN_MASTER_ID
 fi
 
-/usr/local/rbenv/shims/bundle exec unicorn_rails -c ${PRODUCTION_DIR}/config/unicorn.rb -D -E production
+/usr/local/rbenv/shims/bundle exec unicorn_rails -c ${PRODUCTION_DIR}/config/unicorn.rb -D -E production > /tmp/test.log
 nginx -s reload
