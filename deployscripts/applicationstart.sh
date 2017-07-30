@@ -13,7 +13,7 @@ else
 fi
 
 readonly NGINX_MASTER_ID=`ps aux | grep nginx:\ master | grep -v grep | awk '{ print $2 }'`
-if [ -n "$UNICORN_MASTER_ID" ]; then
+if [ -n "$NGINX_MASTER_ID" ]; then
   nginx -s reload
 else
   nginx
